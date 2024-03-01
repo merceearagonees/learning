@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <style>
+    .app{
+      width: 748px;
+      height: 600px;
+      border:1px solid #ccc;
+      border-radius: 20px;
+      padding: 30px;
+      overflow: hidden;
+    }
+    .app-list__list{
+      display: flex;
+      flex-wrap: wrap;
+      /* gap: 15px; */
+    }
+    .app-list__item{
+      height: 190px;
+      width: 50%;
+      margin-bottom: 20px;;
+      /* padding-right: 10px; */
+      box-sizing: border-box;
+    }
+    .app-list__item:nth-child(odd){
+      padding-right: 10px;
+    }
+    .app-list__item:nth-child(even){
+      padding-left: 10px;
+    }
+    .app-list__item__content{
+      box-shadow: 3px 3px 14px rgba(0,0,0,.2);
+      border-radius: 8px;
+      box-sizing: border-box;
+      height: 100%;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content:space-between
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="app-menu">menu</div>
+    <div class="app-list">
+      <h3 class="app-list__title">List</h3>
+      <div class="app-list__list">
+
+        <div class="app-list__item">
+          <div class="app-list__item__content">
+            <div class="app-list__item__icon">i</div>
+            <div>
+              <div class="app-list__item__name">name</div>
+              <div class="app-list__item__num-of-tasks">29 tasks</div>
+            </div>
+          </div>
+        </div>
+       
+        <div class="app-list__item">
+          <div class="app-list__item__content">
+            <div class="app-list__item__icon">i</div>
+            <div class="app-list__item__name">name</div>
+            <div class="app-list__item__num-of-tasks">29 tasks</div>
+          </div>
+        </div>
+        <div class="app-list__item">
+          <div class="app-list__item__content">
+            <div class="app-list__item__icon">i</div>
+            <div class="app-list__item__name">name</div>
+            <div class="app-list__item__num-of-tasks">29 tasks</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    // learn how to create values (numbers or string)
+    var a = 1;
+    var b = 2;
+    var d = 'my name is O\'Neil';
+    var c = (a + b) * 6;
+    console.log('tell me what c is');
+    console.log(c);
+    console.log(d);
+    console.log('3234234')
+    
+    // learn how to use logics
+    var age = -2;
+
+    if(age === 0 || age === 1) {
+      console.log('you are still a baby');
+    } else {
+      console.log('you are growing big');
+    }
+    // if(age >= 18) {
+    //   console.log('you are a grown up');
+    // } else if(age < 18 && age > 0) {
+    //   console.log('you are under age');
+    // } else{
+    //   console.log('stop messing with me');
+    // }
+
+    // learn how to handle strings
+    var firstName = 'Ed';
+    var lastName = 'smith';
+
+    var fullName = firstName + ' ' + lastName;
+    console.log(fullName);
+    
+
+    // ARRAY "collection"
+    var names = ['foo', 'bar', '34', 'hoo'];
+    console.log(names);
+    console.log(names.length); //para saber la ultima de la lista (cuidado que length siempre acaba con h)
+    console.log(names[names.length - 1]);
+  </script>
+  
+</body>
+</html>
