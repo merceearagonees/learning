@@ -121,7 +121,7 @@ console.log(c)
         //NaN
 
     let nombre = '';
-    let username = nombre || 'anonimo'; //Saldra anonimo, porque nombre esta vacio, lo cual lleva a un falsy
+    let username = nombre || 'anonimo'; //Saldra anonimo, porque nombre esta vacio, lo cual lleva a un falsy y los que son false no se muestran
     console.log(username);
 
     function fn1() {
@@ -129,8 +129,38 @@ console.log(c)
     return true;
     }
     function fn2() {
-    console.log('soy function 2');
+    console.log('soy function 2'); //se muestran las 2 porque son true
     return true;
     }
     let x = fn1() && fn2();
-    
+
+//OPERADORES DE BITWISE:
+
+    // Solo coge bits = 0 o 1
+    // Byte: 00000000 -> 0
+    // Byte: 00000001 -> 1
+    // Byte: 00000010 -> 2
+    // Byte: 00000011 -> 3
+    // Byte: 00000100 -> 4
+    // Byte: 00000101 -> 5
+    // Byte: 00000110 -> 6
+    // console.log(1 | 3); // 00000011 El operador or, no va a elegir, sino que creara un nuevo bit en base a si uno de los dos contiene un uno 
+    // console.log(1 | 4); // 00000101 Este dara un 5 porque es lo que forman los bits
+    // console.log(3 | 5); // 00000111 bits del numero 7
+
+    // console.log(1 & 3); // 00000001 Daran 1 o 0 en funci'on de si lo comparten o no
+    // console.log(1 & 4); // 00000000
+    // console.log(3 & 5); // 00000001 
+
+//OPERADOR TERNARIO:
+    // let edad = 25;
+    // let acceso = edad > 17 ? 'Permitir ingreso' : 'No puede ingresar'; 
+    // console.log(acceso); //Si es true mostrara lo primero, si no mostrara lo segundo. Estos operadores son como el if
+
+//OPERADORES DE CONTROL DE FLUJO (IF, ELSE...)
+
+//OPERADOR IF, ELSE:
+    let edad = 25;
+    if (edad > 17) { //todo lo de dentro de la llave se llama bloque de codigo
+        console.log('usuario mayor de edad')
+    }
