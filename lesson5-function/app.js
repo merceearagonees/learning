@@ -66,10 +66,4 @@ vendingMachine('chocolate', 'hazelnut');
 
 
 
-//create a function called calculator, with 3 parameters (first one= if it's + or - or /)
-//(second one and third are numbers)
-//function return to see the final result
-// the input you pass in has to be a number not a string
-//search how to recognize if the input that you pass is a number
-//if it's not a number it has to be false
-const b = 1
+
