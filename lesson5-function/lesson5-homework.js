@@ -8,13 +8,59 @@
 //if it's not a number it has to be false
 
 function calculator(operation, a, b) {
-    if (operation === '+' || operation === '-' || operation === '*' || operation === '/') {
-        console.log(operation);
+let result;
+
+    if (typeof a !== 'number' || typeof b !== 'number'){
+        console.log('False');
     }
-    else if(a && b === numbers) {
-        console.log(a);
+    else if (operation === '+') {
+        result = sum(a, b);
     }
+    else if(operation === '-') {
+        result = substract(a, b);
+    }
+    else if(operation === '*') {
+        result = multiplication(a, b);
+    }
+    else if(operation === '/') {
+        result = division(a, b);
+    }
+    else {
+        console.log('error');
+    }
+    console.log(result);
 }
 
-calculator('+', '-', '*', '/');
-calculator(numbers);
+function sum(a, b) {
+    return a + b;
+}
+function substract(a, b) {
+    return a - b;
+}
+function multiplication(a, b) {
+    return a * b;
+}
+function division(a, b) {
+    return a / b;
+}
+
+
+
+calculator('+', 1, 4);
+calculator('*', 7, 3);
+calculator('/', 6, 2);
+calculator('-', '4', '2');
+
+
+
+
+// calculator();
+
+
+// function add(a, b) {
+//     const sum = a + b;
+//     return sum;
+// }
+
+// const sum = add(1, 3)
+// console.log(sum);
