@@ -7,8 +7,9 @@
 //search how to recognize if the input that you pass is a number
 //if it's not a number it has to be false
 
+
 function calculator(operation, a, b) {
-let result;
+    let result;
 
     if (typeof a !== 'number' || typeof b !== 'number'){
         console.log('False');
@@ -30,7 +31,6 @@ let result;
     }
     console.log(result);
 }
-
 function sum(a, b) {
     return a + b;
 }
@@ -43,24 +43,7 @@ function multiplication(a, b) {
 function division(a, b) {
     return a / b;
 }
-
-
-
 calculator('+', 1, 4);
 calculator('*', 7, 3);
 calculator('/', 6, 2);
 calculator('-', '4', '2');
-
-
-
-
-// calculator();
-
-
-// function add(a, b) {
-//     const sum = a + b;
-//     return sum;
-// }
-
-// const sum = add(1, 3)
-// console.log(sum);
