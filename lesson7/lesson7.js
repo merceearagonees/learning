@@ -68,7 +68,7 @@ class LoginForm {
 
     validateInput() {
        if(this.password !== this.confirmPassword) {
-        this.errorMessage.push('passwords do not match');   
+        this.errorMessage.push('passwords do not match');
         this.isAllInputCorrect = false;
         
     }

@@ -31,6 +31,10 @@ function calculator(operation, a, b) {
     }
     console.log(result);
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> master
 function sum(a, b) {
     return a + b;
 }
@@ -43,7 +47,15 @@ function multiplication(a, b) {
 function division(a, b) {
     return a / b;
 }
+<<<<<<< HEAD
+
 calculator('+', 1, 4);
 calculator('*', 7, 3);
 calculator('/', 6, 2);
 calculator('-', '4', '2');
+=======
+calculator('+', 1, 4);
+calculator('*', 7, 3);
+calculator('/', 6, 2);
+calculator('-', '4', '2');
+>>>>>>> master
