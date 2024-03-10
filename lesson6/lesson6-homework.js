@@ -4,7 +4,7 @@
 //simple but dinamic
 
 class Calc {
-    A = 1;
+    A = 1; //don't use mayusculas
     B = 1;
     Result = 0;
     
@@ -34,4 +34,23 @@ const calcs = {
     calcOp, calcOp2, calcOp3
 }
 console.log(calcs);
+
+//RESULTADO OPTIMO DE LOS DEBERES DE ARRIBA
+
+
+// class Calculator {
+//     plus(a, b) {
+//         return a + b;
+//     }
+//     minus(a, b) {
+//         return a - b;
+//     }
+        // setInterval(newA) {
+        //     this.a =newA;
+        // }
+// }
+
+// const calcu = new Calculator();
+// calcu.plus(1, 2);
+// calcu.minus(1, 2);
 
