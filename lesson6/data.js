@@ -68,7 +68,7 @@ console.log(personObj.age); //NO como el de arriba porque no es una funcion, asÃ
 
 
 class Car {
-    color = 'black';
+    color = 'black'; //THIS ARE CALLED PROPERTIES
     lightBrightness = 1;
     speed = 0;
   
@@ -78,7 +78,7 @@ class Car {
       if(speed) this.speed = speed;
     }
   
-    turnUpBrightness() {
+    turnUpBrightness() { //THIS ARE CALLED METHODS
       if(this.lightBrightness >= 10) return;
       this.lightBrightness++;
     }
